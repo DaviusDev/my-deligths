@@ -279,3 +279,70 @@ header {
   align-items: center;
   padding: 20px;
 }
+
+footer {
+  background-color: #ffa500; /* Naranja suave */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos bajen en pantallas pequeñas */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-item {
+  flex: 1; /* Hace que los elementos se expandan equitativamente */
+  min-width: 200px; /* Evita que sean demasiado pequeños */
+  padding: 10px;
+}
+
+/* 📱 Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; /* Cambia a columna en móviles */
+    text-align: center;
+  }
+
+  .footer-item {
+    width: 100%; /* Cada elemento ocupa toda la pantalla */
+    margin-bottom: 10px;
+  }
+}
+
+.horario-container {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en móviles */
+  justify-content: space-around; /* Distribuye los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  text-align: center;
+  background-color: #ffa500; /* Naranja suave */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.horario-item {
+  flex: 1; /* Distribuye equitativamente los elementos */
+  min-width: 200px; /* Evita que los elementos sean demasiado pequeños */
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 600px) {
+  .horario-container {
+    flex-direction: column; /* Apila los elementos */
+  }
+
+  .horario-item {
+    width: 100%; /* Cada elemento ocupa todo el ancho */
+    margin-bottom: 10px;
+  }
+}
