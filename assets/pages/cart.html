@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Carrito</title>
+    <link
+      href="/assets/uicons-regular-rounded/css/uicons-regular-rounded.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="/assets/js/main.js"></script>
+
+    <header>
+      <div class="header-container">
+        <!-- Menú hamburguesa -->
+        <div class="menu-icon" onclick="togglemenu()">
+          <span class="fi fi-rr-menu-burger"></span>
+        </div>
+
+        <a href="index.html" class="restaurant-name"> My Delights</a>
+
+        <div class="icons">
+          <div class="icons">
+            <a href="login.html" class="icon-link">
+              <span class="fi fi-rr-user"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <ul>
+          <li class="menu-text">
+            <a href="index.html" class="menu-text">Inicio</a>
+          </li>
+          <li class="menu-text">
+            <a href="menu-a-la-carta.html" class="menu-text"
+              >Platos a la carta</a
+            >
+          </li>
+          <li class="menu-text">
+            <a href="almuerzo-corriente.html" class="menu-text"
+              >Almuerzo Corriente</a
+            >
+          </li>
+          <li class="menu-text">
+            <a href="otros-servicios.html" class="menu-text">Otros servicios</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="cart-title">Mi Carrito</h1>
+    <div class="cart-container">
+      <div class="cart-item">
+        <img src="/assets/img/platos/plato-2.jpg" alt="Plato 1" />
+        <div class="cart-item-info">
+          <h2>Plato 1</h2>
+          <p>Descripción del plato 1</p>
+          <p>Precio: $10.00</p>
+          <button class="btn btn-primary">Eliminar</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="/assets/img/platos/plato-5.jpg" alt="Plato 2" />
+        <div class="cart-item-info">
+          <h2>Plato 2</h2>
+          <p>Descripción del plato 2</p>
+          <p>Precio: $15.00</p>
+          <button class="btn btn-primary">Eliminar</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="/assets/img/platos/plato-2.jpg" alt="Plato 3" />
+        <div class="cart-item-info">
+          <h2>Plato 3</h2>
+          <p>Descripción del plato 3</p>
+          <p>Precio: $20.00</p>
+          <button class="btn btn-primary">Eliminar</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-item">
+      <h2 class="cart-item">Total: $45.00</h2>
+      <button class="btn btn-primary">Pagar</button>
+    </div>
+  </body>
+  <footer>
+    <div class="info">
+      <div class="info-container">
+        <div class="info-item">
+          <span class="fi fi-rr-clock"></span>
+          <h2>Horario</h2>
+          <p>Lunes a viernes de 8:00 am a 5:00 pm</p>
+        </div>
+        <div class="info-item">
+          <span class="fi fi-rr-map"></span>
+          <h2>Ubicación</h2>
+          <p>Calle 123 # 123 - 123</p>
+        </div>
+        <div class="info-item">
+          <span class="fi fi-rr-smartphone"></span>
+          <h2>Contacto</h2>
+          <p>123 456 7890</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
